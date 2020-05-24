@@ -1,0 +1,19 @@
+https://dev.to/brunnerlivio/create-your-first-module-with-deno-575k
+
+├── deps.ts
+├── .github
+│   └── workflows
+│       └── deno.yml
+├── .gitignore
+├── mod_test.ts
+├── mod.ts
+├── README.md
+├── test_deps.ts
+├── test.ts
+└── tsconfig.json
+
+
+deno ./mod_test.ts
+deno fmt **/*.ts
+
+
