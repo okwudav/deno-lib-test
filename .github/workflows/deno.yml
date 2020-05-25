@@ -6,7 +6,7 @@ jobs:
 
     strategy:
       matrix:
-        deno: [1.0.0, 1.0.1, 1.0.2]
+        deno: [1.0.2]
     name: Test with Deno ${{ matrix.deno }} 
 
     steps:
@@ -26,7 +26,7 @@ jobs:
         run: deno --version
 
       - name: Check format
-        run: deno fmt --check **/*.ts
+        run: deno fmt --check
 
       # - name: Run tests
       #   run: deno test.ts
